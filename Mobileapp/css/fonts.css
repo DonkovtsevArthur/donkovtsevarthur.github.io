@@ -1,0 +1,30 @@
+﻿/*Montserrat*/
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url("../fonts/Montserrat/Montserrat-Bold.otf"); 
+}
+@font-face {
+    font-family: 'Montserrat-ultralight';
+    src: url("../fonts/Montserrat/Montserrat-UltraLight.otf"); 
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url("../fonts/Montserrat/Montserrat-Regular.otf"); 
+}
+
+
+/*olivier*/
+@font-face {
+    font-family: 'olivier';
+    src: url("../fonts/Olivier/olivier_01.ttf"); 
+}
+
+/*OpanSans*/
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf"); 
+}
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url("../fonts/OpenSans/OpenSans-Italic.ttf"); 
+}

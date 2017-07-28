@@ -1,0 +1,415 @@
+﻿@import "bourbon/bourbon"
+
+body
+	
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+h1,h2
+	font-size: 52px
+
+
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+//preloader
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_Inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-posirion: center center
+		background-color: #fff
+		height: 100px
+		width: 100px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+section,
+.main_head
+	position: relative
+	max-height: 850px
+//header
+.main_head
+	display: block
+	min-height: 850px
+	z-index: 6889
+	
+	.fon_b
+		background-color: rgba(218,51,45, .7)!important
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+	.main_content_top
+		padding-top: 100px
+
+	.main_content
+		padding-top: 100px
+		h2
+			font-family: Montserrat-bold
+			text-transform: uppercase
+			letter-spacing: -0.05em
+			line-height: 125%
+		p 
+			font-size: 36px
+			line-height: 96%
+			font-family: Montserrat-ultralight
+			margin: 54px 0 50px
+		a 
+			font-family: Montserrat-bold
+			text-transform: uppercase
+			line-height: 0.4em
+			padding: 29px 53px 29px 0
+			border-radius: 50px
+			letter-spacing: -0.025em
+			text-decoration: none
+	
+
+
+			.fa-mobile
+				font-size: 43px
+				vertical-align: middle
+				padding: 0 24px 0 34px
+				
+	.main_img	
+		display: block
+		float: right
+		img
+			width: 410px
+			z-index: 6888
+			padding-top: 100px
+
+		
+
+//section features
+.s_features
+	display: block
+	position: absolute
+	width: 100%
+	z-index: 7888
+	background-color: #fff
+	padding: 88px 0 
+	h2,p
+		text-align: center	
+	h2
+		font-family: Montserrat-bold
+		text-transform: uppercase
+		line-height: 1.73em
+	p 	
+		color: #000
+		font-size: 22px
+	 
+	.s_features_content
+		display: block
+		text-align: center
+		margin: 60px 0 100px
+		h2 	
+			font-family: Montserrat-bold
+			font-size: 24px
+			line-height: 1.33em
+			text-transform: uppercase
+			margin-top: 34px
+		p 
+			font-size: 16px	
+			margin: 42px 0
+//hocolate
+.s_hocolate
+	background-color: #DDE3E1	
+	overflow: hidden
+	max-height: 850px
+	min-height: 850px
+	.s_holo_content
+		padding-top: 174px
+		h2,p,img
+			text-align: left
+		h2
+			font-family: Montserrat-bold
+			text-transform: uppercase
+			letter-spacing: -0.05em
+			line-height: 116%
+			color: #fff
+		p 
+			margin-top: 55px
+		a 
+			display: inline-block
+			padding: 18px 24px
+			letter-spacing: -0.025em
+			text-transform: uppercase
+			font-family: Montserrat-Regular		
+			border-radius: 50px
+			margin: 70px 0 0 15px
+			text-decoration: none
+
+
+//caruosel
+.carousel-indicators
+	li, .active 
+		width: 18px
+		height: 18px
+
+.s_say
+	display: block 		
+	padding: 88px 0
+	text-align: center
+	h3
+		font-size: 34px
+	p 
+		font-size: 20px
+		text-transform: uppercase
+		font-family: Montserrat-bold
+		letter-spacing: 0.2em
+		padding: 56px 0 100px
+
+//footer
+.s_footer
+	background-color: #3D3D48
+	max-height: auto
+	padding: 117px 0 158px
+	h3
+		text-align: left
+		font-family: olivier
+		color: #fff
+		font-size: 52px
+		padding: 0
+		margin: 0
+		margin-bottom: 160px
+	h4
+		font-size: 20px
+		font-family: Montserrat-bold
+		margin: 0
+	p 
+		text-align: left
+		font-size: 15px
+		font-family: Montserrat-Regular
+		color: #fff		
+	.s_fo_text
+		font-family: OpenSans-Italic
+	span 
+		font-size: 11px
+		font-family: OpenSans-Regular
+.footer_content
+	margin-bottom: 44px
+//menu
+
+.main_logo
+	
+	h1
+		font-family: olivier
+		margin: 0
+		float: left
+.main_menu
+	display: block
+	float: right
+	vertical-align: middle
+
+	.mPS2id-highlight
+		border-bottom: 5px solid #fff	
+	a 
+		display: inline-block
+		padding: 18px 20px
+		font-size: 18px
+		letter-spacing: -0.025em
+		text-transform: uppercase
+		font-family: Montserrat-Regular
+		text-decoration: none
+		border-bottom: 5px solid rgba(0,0,0,.0)
+	a:hover
+		border-bottom: 5px solid #fff		
+#menu 
+	display: block
+	position: absolute
+	z-index: 9997
+	
+#menu.default 
+	width: 100%
+	margin-top: 34px
+
+#menu.fixed 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 9998
+	display: block
+	padding: 10px 0 15px
+
+//mobile menu
+.toggle_menu
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: none
+	right: 20px
+	top: 11px
+	background-color: black
+	display: none
+	span
+		display: block
+$w: 28px
+$h: 3px
+#sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 6px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	float: right
+
+
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+        
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+    
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.2
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+
+#sandwich.active 
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+		
+.top_menu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.85)
+	z-index: 50
+	right: 0
+	top: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 180px
+		text-align: center
+		+animation-duration(.01s)
+		li
+			&:nth-child(1) a
+				+animation-delay(0)
+			&:nth-child(2) a
+				+animation-delay(.1s)
+			&:nth-child(3) a
+				+animation-delay(.2s)
+			&:nth-child(4) a
+				+animation-delay(.3s)
+		a
+			color: #fff
+			display: block
+			text-transform: uppercase
+			font-size: 12px
+			opacity: 0
+			position: relative
+			height: 40px
+			outline: none
+			text-decoration: none
+			padding: 12px
+		a:hover
+			background-color: rgba(255,255,255,.08)
+			span
+				display: block
+				position: relative
+				top: -30px
+				left: 0
+				height: 100%
+				+transition(all 0.5s ease)
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+		
+
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+﻿/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px) {
+
+	}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.main_menu {
+	display: none;
+}
+.toggle_menu{
+	display: block;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/*menu and main_head*/
+.main_head .main_img {
+    display: none;
+    float: right; }
+.main_menu {
+	display: none;
+}
+.toggle_menu{
+	display: block;
+}
+h1,h2 {
+	font-size: 32px
+}
+
+.main_head .main_content {
+    padding-top: 0px;
+}
+.main_head .main_content p {
+    font-size: 22px;
+    margin: 34px 0 30px;
+}
+.main_head {
+    min-height: 650px;
+}
+.main_head .main_content a {
+		width: 100%;
+		display: block;	
+		text-align: center;
+		padding: 30px;
+}
+.main_head .main_content a .fa-mobile  {
+	display: none;
+}
+/*features*/
+.s_features p {
+    font-size: 16px;
+}
+/*hocolate*/
+.s_hocolate .s_holo_content {
+    padding-top: 92px;
+}
+.s_hocolate {
+    /* max-height: 750px; */
+    min-height: 750px;
+}
+/*blog*/
+.s_say h3 {
+    font-size: 16px;
+}
+/*footer*/
+.s_footer h3 {
+    font-size: 42px;
+    margin-bottom: 56px;
+}
+/*menu*/
+#menu.fixed {
+  padding: 33px 0 16px;
+}
+
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1280px) {
+
+
+
+
+}
