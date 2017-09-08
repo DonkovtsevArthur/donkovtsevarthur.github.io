@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="m_menu">
+			<ul>
+				<li>Меню</li>
+				<li>Контакты</li>
+			</ul>
+		</div>
+		<div class="logo"><img src="img/logo.png" alt="logo"></div>
+		<div class="b_adress">
+			<ul>
+				<li>ПН-ПТ 10-23  | Сегодня: <span id="time"></span></li>
+				<li>г. Нижний Новгород ул. Б. Покровская 33</li>
+			</ul>
+		</div>
+		<div id="menu_con" class="menu_content">
+			<div class="menu_menu">
+				<div class="menu_top">
+					<h2>Первое</h2>
+					<div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+				</div>
+				<ul>
+					<li>Томатный суп <b>150</b></li>
+					<li>Куринный салат <b>100</b></li>
+					<li>Бутерброд <b>55</b></li>
+				</ul>
+				<div class="menu_top">
+					<h2>Второе</h2>
+				</div>
+				<ul>
+					<li>Рыба на гриле и картофель <b>550</b></li>
+					<li>Итальянская пицца <b>450</b></li>
+					<li>Вегетарианская пицца <b>350</b></li>
+					<li>Большой бургер <b>350</b></li>
+					<li>Жаренная курица и картофель <b>450</b></li>
+				</ul>
+				<div class="menu_top">
+					<h2>Десерты</h2>
+				</div>
+				<ul>
+					<li>Фруктовый смузи <b>120</b></li>
+					<li>Мороженное <b>70</b></li>
+					<li>Шоколадный кекс <b>65</b></li>
+					<li>Сыр <b>35</b></li>
+				</ul>
+			</div>
+		</div>
+		<div id="con" class="menu_content">
+			<div class="menu_menu mob">
+				<div class="menu_top">
+					<h2>Контакты</h2>
+					<div id="close2"><i class="fa fa-times" aria-hidden="true"></i></div>
+				</div>
+				<form action="#">
+					<ul>
+						<li><input type="text" required name="name" placeholder="Введите имя"></li>
+						<li><input type="number" required name="people" placeholder="Сколько Вас будет?"></li>
+						<li><input type="datetime-local" required name="date" placeholder="Date and time" value="2017-11-16T20:00"></li>
+						<li><input type="text" required name="message" placeholder="Сообщение"></li>
+						<li><button type="submit">Отправить сообщение</button></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script async src="js/scripts.min.js"></script>
+</body>
+</html>
