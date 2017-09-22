@@ -38,7 +38,26 @@
 </head>
 
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    
 	<!-- RUN HEADER -->
 	<div class="header">
 		<div class="bgc"></div>
@@ -88,7 +107,7 @@
 				</ul>
 			</div>
 		</div>
-	
+
 		<div class="slogan">
 			<h1>Ride every wave as if it's your last</h1>
 			<p>We love the motion of the ocean</p>
@@ -135,95 +154,311 @@
 											<p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great
 												for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first
 												ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
-										</div>
-										<div id="B" class="tabcontent" style="display:none">
-											<p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great
-												for any level of surfing depending on who ride </p>
-										</div>
-										<div id="C" class="tabcontent" style="display:none">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere eius quisquam amet assumenda minus, dolore ad
-												saepe culpa! Error beatae optio quos aliquid neque illo repudiandae cumque facere magni ipsum!</p>
+											</div>
+											<div id="B" class="tabcontent" style="display:none">
+												<p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great
+													for any level of surfing depending on who ride </p>
+												</div>
+												<div id="C" class="tabcontent" style="display:none">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere eius quisquam amet assumenda minus, dolore ad
+														saepe culpa! Error beatae optio quos aliquid neque illo repudiandae cumque facere magni ipsum!</p>
+													</div>
+												</div>
+												<div class="pricebuy">
+													<span>$499.99</span>
+													<button>buy now</button>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="pricebuy">
-										<span>$499.99</span>
-										<button>buy now</button>
+
+									<!-- TWO SLIDERS -->
+
+									<div class="sliders sur-con">
+										<div class="numbertext">2/3</div>
+										<div class="sur-one">
+											<img src="img/tr.jpg" alt="">
+											<div class="icon-images">
+												<img src="img/boards.png" alt="boards" class="display-img">
+											</div>
+											<div class="img-iteme">
+												<p class="imgactive"><img src="img/boards.png" alt=""></p>
+												<p><img src="img/2.png" alt=""></p>
+												<p><img src="img/boards.png" alt=""></p>
+											</div>
+										</div>
+										<div class="sur-two">
+											<div class="bords"></div>
+											<div class="sur-two-con">
+												<h2>JR Surfboards The Donny Stoker Yellow/Green Rail Fade</h2>
+												<div class="rating">
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<span> (52)</span>
+												</div>
+												<div class="tabs">
+													<div class="tab">
+														<button class="tablinks" onclick="openCity(event, 'd')">Description</button>
+														<button class="tablinks" onclick="openCity(event, 'e')">Features</button>
+														<button class="tablinks" onclick="openCity(event, 'j')">Dimensions</button>
+														<span></span>
+													</div>
+													<div id="d" class="tabcontent">
+														<p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great
+															for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first
+															ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+														</div>
+														<div id="e" class="tabcontent" style="display:none">
+															<p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great
+																for any level of surfing depending on who ride </p>
+															</div>
+															<div id="j" class="tabcontent" style="display:none">
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere eius quisquam amet assumenda minus, dolore ad
+																	saepe culpa! Error beatae optio quos aliquid neque illo repudiandae cumque facere magni ipsum!</p>
+																</div>
+															</div>
+															<div class="pricebuy">
+																<span>$499.99</span>
+																<button>buy now</button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- END SLIDERS -->
+												<div class="prev_next">
+													<a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+													<a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-
-						<!-- TWO SLIDERS -->
-
-						<div class="sliders sur-con">
-							<div class="numbertext">2/3</div>
-							<div class="sur-one">
-								<img src="img/tr.jpg" alt="">
-								<div class="icon-images">
-									<img src="img/boards.png" alt="boards" class="display-img">
-								</div>
-								<div class="img-iteme">
-									<p class="imgactive"><img src="img/boards.png" alt=""></p>
-									<p><img src="img/2.png" alt=""></p>
-									<p><img src="img/boards.png" alt=""></p>
-								</div>
-							</div>
-							<div class="sur-two">
-								<div class="bords"></div>
-								<div class="sur-two-con">
-									<h2>JR Surfboards The Donny Stoker Yellow/Green Rail Fade</h2>
-									<div class="rating">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<span> (52)</span>
-									</div>
-									<div class="tabs">
-										<div class="tab">
-											<button class="tablinks" onclick="openCity(event, 'd')">Description</button>
-											<button class="tablinks" onclick="openCity(event, 'e')">Features</button>
-											<button class="tablinks" onclick="openCity(event, 'j')">Dimensions</button>
-											<span></span>
-										</div>
-										<div id="d" class="tabcontent">
-											<p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great
-												for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first
-												ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
-										</div>
-										<div id="e" class="tabcontent" style="display:none">
-											<p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great
-												for any level of surfing depending on who ride </p>
-										</div>
-										<div id="j" class="tabcontent" style="display:none">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere eius quisquam amet assumenda minus, dolore ad
-												saepe culpa! Error beatae optio quos aliquid neque illo repudiandae cumque facere magni ipsum!</p>
+							<!-- END HEADER -->
+							<section class="about_us">
+								<div class="bigA">
+									<div class="container">
+										<div class="row">
+											<p>About us</p>
 										</div>
 									</div>
-									<div class="pricebuy">
-										<span>$499.99</span>
-										<button>buy now</button>
+								</div>
+								<div class="bg-two"></div>
+								<div class="about_con">
+									<div class="ab_con_one">
+										<p>We are Surfers co.</p>
+										<div class="times">
+											<span></span><span></span>
+										</div>
+										<span>
+											Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.
+										</span>
+										<a href="">Read more</a>
+									</div>
+									<div class="ab_con_two">
+										<div id="player"></div>
+										<div id="thumbnail_container" class="thumbnail_container">
+											<img class="thumbnail" id="thumbnail" />
+										</div>
+										<a class="start-video"><img width="74" src="http://image.flaticon.com/icons/png/512/0/375.png" style="filter: invert(100%); -webkit-filter: invert(100%);"></a>
 									</div>
 								</div>
-							</div>
-						</div>
-						<!-- END SLIDERS -->
-						<div class="prev_next">
-							<a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-							<a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END HEADER -->
+							</section>
+							<!-- END ABOUT -->
+							<section class="our_team">
+								<div class="bigA">
+									<div class="container">
+										<div class="row">
+											<p>our team</p>
+										</div>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="sli rewteam">
+											<div class="team_card">
+												<img src="img/profile/profile1.jpg" alt="">
+												<p>Taj Burrow</p>
+												<a href="#">@tajamos</a>
+												<div class="waves_block">
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+												</div>
+												<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Yallingup, Australia</a>
+											</div>
+											<div class="team_card">
+												<img src="img/profile/profile2.jpg" alt="">
+												<p>Malia Manuel</p>
+												<a href="#">@maliamanuel</a>
+												<div class="waves_block">
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+												</div>
+												<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Wailua, Hi</a>
+											</div>
+											<div class="team_card">
+												<img src="img/profile/profile3.jpg" alt="">
+												<p>Ian Walsh</p>
+												<a href="#">@ian.walsh</a>
+												<div class="waves_block">
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+												</div>
+												<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Maui, Hi</a>
+											</div>
+											<div class="team_card">
+												<img src="img/profile/profile4.jpg" alt="">
+												<p>Macy Callaghan</p>
+												<a href="#">@macyjanecallaghan</a>
+												<div class="waves_block">
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+												</div>
+												<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> San Clemente, CA</a>
+											</div>
+										</div>
+										<!-- SLIDERS TWO -->
+										<div class="sli rewteam">
+											<div class="team_card">
+												<img src="img/profile/profile1.jpg" alt="">
+												<p>Taj Burrow</p>
+												<a href="#">@tajamos</a>
+												<div class="waves_block">
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+												</div>
+												<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Yallingup, Australia</a>
+											</div>
+											<div class="team_card">
+												<img src="img/profile/profile2.jpg" alt="">
+												<p>Malia Manuel</p>
+												<a href="#">@maliamanuel</a>
+												<div class="waves_block">
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+												</div>
+												<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Wailua, Hi</a>
+											</div>
+											<div class="team_card">
+												<img src="img/profile/profile3.jpg" alt="">
+												<p>Ian Walsh</p>
+												<a href="#">@ian.walsh</a>
+												<div class="waves_block">
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+													<div class="waves"><span></span><span></span></div>
+												</div>
+												<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Maui, Hi</a>
+											</div>
 
+										</div>
+										<!-- control arrows -->
+										<div class="slideControls">
+											<a class="slidePrev" onclick="plusDivs(-1)">
+												<i class="fa fa-angle-left"></i>
+												<span ></span>
+											</a>
+											<a class="slideNext" onclick="plusDivs(1)">
+												<i class="fa fa-angle-right"></i>
+												<span ></span>
+											</a>
+										</div> 
+									</div>
+								</div>
+							</section>
+							<section class="blog">
+								<div class="container">
+									<div class="row">
+										<p>Latest Updates</p>
+										<div class="times">
+											<span></span><span></span>
+										</div>
+										<div class="post_content">
+											<div class="post-item">
+												<img src="img/post/post1.jpg" alt="">
+												<span>Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</span>
+											</div>
+											<div class="post-item">
+												<img src="img/post/post2.jpg" alt="">
+												<span>A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</span>
+											</div>
+											<div class="post-item">
+												<img src="img/post/post3.jpg" alt="">
+												<span>Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</span>
+											</div>										
+										</div>
+										<button>view all posts</button>
+									</div>
+								</div>	
+							</section>	
+							<!-- BLOG END -->
 
+							<!-- SOCIAL RUN -->
+							<section class="social">
+								<div class="container">
+									<div class="row">
+										<div class="social_content">
+											<div class="social_inst">
+												<p>instagram</p>
+												<div class="social_inst_img">
+													<img src="img/inst/inst.jpg" alt="">
+													<img src="img/inst/inst2.jpg" alt="">
+													<img src="img/inst/inst3.jpg" alt="">
+													<img src="img/inst/inst4.jpg" alt="">
+												</div>
+												<div class="social_logo">
+													<ul>
+														<li><img src="img/inst/logo_inst.jpg" alt=""></li>
+														<li><p>Follow us</p></li>
+														<li><a href="#">@surfersco</a></li>
+													</ul>
+
+												</div>
+											</div>
+											<div class="social_facebook">
+												<div class="face_logo">
+													<img src="img/facebook/lo.png" alt="">
+												</div>
+												<div class="face_plugin">
+													<div class="fb-page" data-href="https://www.facebook.com/Dominiosurfers.com.br/?fref=ts" data-tabs="timeline" data-width="340" data-height="215" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Dominiosurfers.com.br/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Dominiosurfers.com.br/?fref=ts">Dominio Surfers Co.</a></blockquote></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+  
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script async src="js/scripts.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+
+
+
+
 
 </body>
 
