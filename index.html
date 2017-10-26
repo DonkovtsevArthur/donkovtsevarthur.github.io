@@ -5,7 +5,60 @@
 	<title>Document</title>
 </head>
 <body>
-	Heellooooo
-	<a href="https://donkovtsevarthur.github.io/i/"> My website</a>
+	<section>
+		<div>
+			<h1>Heeellooo</h1>
+			<a href="https://donkovtsevarthur.github.io/i/"> My website</a>
+		</div>
+		
+	</section>
+	
 </body>
+<style>
+	body {
+		margin: 0;
+		font-size: 36px;
+		line-height: 1.5;
+	}
+	section {
+		display: block;
+		position: absolute;
+		background-color: #ccc;
+		width: 100%;
+		height: 100%;
+	}
+	div {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		transform: translate(-50%, -50%) ;
+	}
+	div a {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 18px;
+		letter-spacing: 5px;
+		color: #fff;
+		padding: 10px 20px;
+		background-color: #000;
+		border: none;
+		
+		animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	}
+	div a:hover {
+		text-decoration: none;
+	}
+	@keyframes example {
+    0% {padding: 10px 20px;}
+    25% {padding: 15px 25px;}
+    50% {padding: 20px 30px;}
+    75% {padding: 15px 25px;}
+    100% {padding: 10px 20px;}
+	}
+</style>
 </html>
