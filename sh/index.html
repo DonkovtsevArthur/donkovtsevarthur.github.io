@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
@@ -139,7 +139,7 @@
 					<div class="slh">
 						<h2>Взрослая следж-хоккейная команда  "Санкт-Петербург"</h2>
 						<p>Первая взрослая следж-хоккейная команда в Санкт-Петербурге стартовала 19.05.2016!</p>
-						<button>вступить в команду</button>
+						<button><a href="https://vk.com/sledge_hockey_spb" target="_blank">вступить в команду</a></button>
 					</div>
 					
 				</div>
@@ -272,23 +272,28 @@
 		<div class="container">
 			<div class="row text-center">
 				<h2>Медиа</h2>
-				<ul>
-					<li>фото</li>
-					<li>видео</li>
-				</ul>
+
+				<div class="filter_div controls">
+					<ul>
+						<li class="filter active"  data-filter="all">все</li>
+						<li class="filter"  data-filter=".category-1">фото</li>
+						<li class="filter"  data-filter=".category-2">видео</li>
+					</ul>
+				</div>
+
 			</div>
 		</div>
-		<div class="gallery">
-			<a href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" alt=""></a>
-			<a href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" alt=""></a>
-			<a href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+		<div id="portfolio_grid" class="gallery">
+			<a class=" mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-2" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-2" href="img/gallery/2.jpg"  ><img src="img/gallery/2.jpg" alt=""></a>
+			<a class="mix category-2" href="img/gallery/3.jpg"  ><img src="img/gallery/3.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg"  ><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
 		</div>
 	</section>
 	<section class="eight-section">
@@ -336,7 +341,7 @@
 					<div class="slh">
 						<h2>Детская следж-хоккейная команда "Аврора"</h2>
 						<p>Первая детско-юношеская следж-хоккейная команда в Санкт-Петербурге стартовала 06.10.2017!</p>
-						<button>вступить в команду</button>						
+						<button><a href="https://vk.com/kids_sledge_hockey_aurora_spb" target="_blank">вступить в команду</a></button>						
 					</div>
 				</div>
 			</div>
@@ -408,7 +413,7 @@
 	<script src="js/scripts.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
+	<script src="libs/mixitup/mixitup.min.js"></script>
 
 </body>
 </html>
