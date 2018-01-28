@@ -30,40 +30,43 @@
 
 <body>
 	<div class="bigfon"></div>
-	<nav class="menu">
-		<ul>
-			<li><a href="#">Команда</a></li>
-			<li><a href="#">Сезон</a></li>
-			<li><a href="#">Медиа</a></li>
-			<li><a href="#">О клубе</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-	</nav>
-
 	<section class="header">
 		<div class="container">
 			<div class="row">
 				<div class="logo"><img src="img/logo.png" alt="logo"></div>
 				<span>Следж-хоккейный клуб</span>
 				<h1>"Санкт-Петербург"</h1>
-
 			</div>
 		</div>
 	</section>
-	<div class="tfixed" id="menu">
+	<nav class="tfixed" id="menu">
 		<div class="container">
 			<div class="row">
 				<div class="menu_logo"><img src="img/logo.png" alt=""></div>
-				<ul>
-					<li><a href="#">Команда</a></li>
-					<li><a href="#">Сезон</a></li>
-					<li><a href="#">Медиа</a></li>
-					<li><a href="#">О клубе</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+				
+					<ul>
+						<li>
+							<a href="#aboutClub">О клубе</a>
+						</li>
+						<li>
+							<a href="#myNews">Новости</a>
+						</li>
+						<li>
+							<a href="#team">Команда</a>
+						</li>
+						<li>
+							<a href="#media">Медиа</a>
+						</li>
+						
+						<li>
+							<a href="#contact">Контакты</a>
+						</li>
+					</ul>
+				
+				
 			</div>
 		</div>
-	</div>
+	</nav>
 	<div class="topDown">
 		<img src="img/logo.png" alt="logo">
 		<ul>
@@ -72,7 +75,25 @@
 			<li><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
 		</ul>
 	</div>
-	<section class="two_section">
+	<div id="news" class="news">
+		<div class="font-vert">
+			<p>Новости клуба</p>
+			<a href="https://vk.com/sledge_hockey_spb">
+				<i class="fa fa-vk" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+	<div id="newscont" class="newscont">
+		<div id="closeNews"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+		<div class="vknews">
+			<div id="vk_groups"></div>
+		</div>
+	</div>
+		
+		
+	</div>
+	<section id="#aboutClub" class="two_section">
+		
 		<div class="container">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -137,22 +158,7 @@
 		</div>
 	
 	</section>
-	<section id="myNews">
-		<div class="container text-center">
-			<div class="row">
-				<h2>Новости</h2>
-			</div>
-			 <div class="col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
-				<div id="vk_groups"></div>
-				<div class="news">
-					<script src="//vk.com/js/api/openapi.js?151"></script>
-				</div>
-			 </div>	
-			
-		</div>
-			
-		</div>
-	</section>
+
 	<section class="three-section">
 		<div class="container">
 			<div class="row">
@@ -206,13 +212,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="five-section">
+	<section id="team" class="five-section">
 		<div class="container text-center">
 			<div class="row">
 				<h2>Состав команды</h2>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Баланда Андрей Юрьевич 05.04.1979 нападающий игровой номер 19.jpg" width="250" height="350" alt="">
+						<img src="img/player/Баланда Андрей Юрьевич 05.04.1979 нападающий игровой номер 19.jpg"  alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">19</td>
@@ -227,7 +233,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Кутовой Сергей Николаевич 26.07.1995 нападающий игровой номер 16.jpg" width="250" height="350" alt="">
+						<img src="img/player/Кутовой Сергей Николаевич 26.07.1995 нападающий игровой номер 16.jpg"  alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">16</td>
@@ -241,7 +247,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Молокоедов Андрей Алексеевич 31.03.85 нападающий игровой номер 8.jpg" width="250" height="350" alt="">
+						<img src="img/player/Молокоедов Андрей Алексеевич 31.03.85 нападающий игровой номер 8.jpg"  alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">8</td>
@@ -255,7 +261,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Спиридонов Пётр Дмитриевич 27.03.1983 нападающий игровой номер 11.jpg" width="250" height="350" alt="">
+						<img src="img/player/Спиридонов Пётр Дмитриевич 27.03.1983 нападающий игровой номер 11.jpg" alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">11</td>
@@ -269,7 +275,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Петров Денис Дмитриевич 28.02.1983 нападающий игровой номер 28.JPG" width="250" height="350" alt="">
+						<img src="img/player/Петров Денис Дмитриевич 28.02.1983 нападающий игровой номер 28.JPG" alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">28</td>
@@ -283,7 +289,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Сорокин Никита 22.01.1987 нападающий игровой номер 13.jpg" width="250" height="350" alt="">
+						<img src="img/player/Сорокин Никита 22.01.1987 нападающий игровой номер 13.jpg"  alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">13</td>
@@ -297,7 +303,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Ибрагимов Ибрагим Исмаилович 01.04.1994 защитник игровой номер 15.jpg" width="250" height="350" alt="">
+						<img src="img/player/Ибрагимов Ибрагим Исмаилович 01.04.1994 защитник игровой номер 15.jpg" alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">15</td>
@@ -311,7 +317,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Степнов Никита Дмитриевич 25.08.1994 защитник игровой номер 7.JPG" width="250" height="350" alt="">
+						<img src="img/player/Степнов Никита Дмитриевич 25.08.1994 защитник игровой номер 7.JPG" alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">7</td>
@@ -325,7 +331,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/Пигарев Кирилл Сергеевич 04.07.1982 вратарь игровой номер 29.JPG" width="250" height="350" alt="">
+						<img src="img/player/Пигарев Кирилл Сергеевич 04.07.1982 вратарь игровой номер 29.JPG" alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb">29</td>
@@ -339,7 +345,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="item-player">
-						<img src="img/player/coach.jpg" width="250" height="350" alt="">
+						<img src="img/player/coach.jpg" alt="">
 						<table class="item-cont">
 							<tr>
 								<td class="item-play-numb"><img src="img/logo.png" alt="СХК "/Санкт-Петербург"/"></td>
@@ -351,7 +357,7 @@
 						</table>
 					</div>
 				</div>
-				
+			
 				
 				
 			<!--	<div class="col-md-12">
@@ -384,7 +390,7 @@
 		</div>
 		
 	</section>
-	<section class="seven-section">
+	<section id="media" class="seven-section">
 		<div class="container">
 			<div class="row text-center">
 				<h2>Медиа</h2>
@@ -400,16 +406,16 @@
 			</div>
 		</div>
 		<div id="portfolio_grid" class="gallery">
-			<a class=" mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
-			<a class="mix category-2" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a class="mix category-2" href="img/gallery/2.jpg"  ><img src="img/gallery/2.jpg" alt=""></a>
-			<a class="mix category-2" href="img/gallery/3.jpg"  ><img src="img/gallery/3.jpg" alt=""></a>
-			<a class="mix category-1" href="img/gallery/1.jpg"  ><img src="img/gallery/1.jpg" alt=""></a>
 			<a class="mix category-1" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
-			<a class="mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
-			<a class="mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
-			<a class="mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
-			<a class="mix category-1" href="img/gallery/1.jpg" ><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-2" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-2" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" alt=""></a>
+			<a class="mix category-2" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+			<a class="mix category-1" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
 		</div>
 	</section>
 
@@ -422,21 +428,12 @@
 					<div class="item">
 						<div class="col-md-4 col-xs-12">
 							<div class="item-top">
-								<div class="topp"><img src="img/top/1.jpg" alt=""></div>
-								<h4>Верховенко Нелли Вячеславовна</h4>
-								<p>представитель</p>
-								<p>Заслуженный мастер спорта РФ. Лицензия тренера 1 категории</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-12">
-							<div class="item-top">
 								<div class="topp">
 									<img src="img/player/HeadClub.jpg" alt="">
 								</div>
 								<h4>Иванов Андрей Васильевич</h4>
 								<p>Руководитель клуба</p>
 								<p>Заслуженный мастер спорта РФ. Лицензия тренера 1 категории</p>
-								
 							</div>
 						</div>
 						<div class="col-md-4 col-xs-12">
@@ -447,6 +444,18 @@
 								<h4>Талдыкин Геннадий Владиславович</h4>
 								<p>Тренер</p>
 								<p>Заслуженный мастер спорта РФ. Лицензия тренера 1 категории</p>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<div class="item-top">
+								<div class="topp">
+									<img src="img/player/Верховенко Нелли Вчеславовна pr-манеджер клуба.jpg" alt="">
+								</div>
+								<h4>Верховенко Нелли Вячеславовна</h4>
+								<p>pr-менеджер клуба</p>
+								<p>Заслуженный мастер спорта РФ. Лицензия тренера 1 категории</p>
+								
 							</div>
 						</div>
 					</div>
@@ -470,7 +479,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="ten-section">
+	<section id="contact" class="ten-section">
 		<div class="ten-con">
 			<div class="container">
 			<div class="row text-center">
@@ -533,10 +542,12 @@
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script async src="js/scripts.min.js"></script>
+	<script src="//vk.com/js/api/openapi.js?151"></script>
+	<script src="js/scripts.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="libs/mixitup/mixitup.min.js"></script>
 
 </body>
 </html>
