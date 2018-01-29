@@ -84,9 +84,10 @@
 		</div>
 	</div>
 	<div id="newscont" class="newscont">
-		<div id="closeNews"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+		<div id="closeNews" class="closeNews"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
 		<div class="vknews">
 			<div id="vk_groups"></div>
+			<script src="//vk.com/js/api/openapi.js?151"></script>
 		</div>
 	</div>
 		
@@ -169,7 +170,7 @@
 					<div class="slh">
 						<h2>Взрослая следж-хоккейная команда  "Санкт-Петербург"</h2>
 						<p>Первая взрослая следж-хоккейная команда в Санкт-Петербурге стартовала 19.05.2016!</p>
-						<button><a href="https://vk.com/sledge_hockey_spb" target="_blank">вступить в команду</a></button>
+						<button class="button"><a href="https://vk.com/sledge_hockey_spb" target="_blank">вступить в команду</a></button>
 					</div>
 					
 				</div>
@@ -388,7 +389,7 @@
 						<h2>Вы человек с ограниченными возможностями? <br>Передвигаетесь на костылях или в инвалидном кресле?<br>
 							Хотели бы заняться спортом?
 						</h2>
-						<button>свяжитесь с нами</button>
+						<button class="button" onclick="addForm()">свяжитесь с нами</button>
 						<p> Идет набор в команду по следж-хоккею!</p>
 					</div>
 					
@@ -481,7 +482,7 @@
 					<div class="slh">
 						<h2>Детская следж-хоккейная команда "Аврора"</h2>
 						<p>Первая детско-юношеская следж-хоккейная команда в Санкт-Петербурге стартовала 06.10.2017!</p>
-						<button><a href="https://vk.com/kids_sledge_hockey_aurora_spb" target="_blank">вступить в команду</a></button>						
+						<button class="button"><a href="https://vk.com/kids_sledge_hockey_aurora_spb" target="_blank">вступить в команду</a></button>						
 					</div>
 				</div>
 			</div>
@@ -515,11 +516,11 @@
 
 					</div>
 					<div class="col-md-6">
-						<form action="#">
+						<form class="form" action="#">
 							<h2>Оставить заявку</h2>
 							<p><input type="text" placeholder="Ваше имя"> </p>		
 							<p><input type="mail" placeholder="Ваша почта"></p>	
-							<button>Отправить</button>
+							<button class="button">Отправить</button>
 						</form>
 					</div>
 				</div>
@@ -545,12 +546,32 @@
 			</div>
 		</div>
 	</div>
+<div id="formback">
+	
+	
+			
+			<div class="formback">
+				<div id="closeForm" class="closeform">
+					<i class="fa fa-chevron-up" aria-hidden="true"></i>
+				</div>
+				<form class="form" action="#">
+					<h2>Оставить заявку</h2>
+					<p>
+						<input type="text" placeholder="Ваше имя"> </p>
+					<p>
+						<input type="mail" placeholder="Ваша почта">
+					</p>
+					<button class="button">Отправить</button>
+				</form>
+			</div>
 
+	
+</div>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script src="//vk.com/js/api/openapi.js?151"></script>
+	
 	<script src="js/scripts.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/mixitup.min.js"></script>
