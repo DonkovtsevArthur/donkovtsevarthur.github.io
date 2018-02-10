@@ -24,45 +24,40 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<style>
-		body {
-			opacity: 0;
-			overflow-x: hidden;
-		}
 
-		html {
-			background-color: #fff;
-		}
-	</style>
 
 </head>
 
 <body>
 	<div class="bigfon"></div>
 	<section class="header">
-		<div class="container">
-			<div class="row">
-				<div class="logo">
-					<img src="img/logo.png" alt="logo">
-				</div>
-				<span>Следж-хоккейный клуб</span>
-				<h1>"Санкт-Петербург"</h1>
-				<div class="topDown">
-					<img src="img/logo.png" alt="logo">
-					<ul>
-						<li>
-							<i class="fa fa-chevron-down" aria-hidden="true"></i>
-						</li>
-						<li>
-							<i class="fa fa-chevron-down" aria-hidden="true"></i>
-						</li>
-						<li>
-							<i class="fa fa-chevron-down" aria-hidden="true"></i>
-						</li>
-					</ul>
+		<div class="center-logo">
+			<div class="container">
+				<div class="row">
+					<div class="logo">
+						<img src="img/logo.png" alt="logo">
+					</div>
+					<span>Следж-хоккейный клуб</span>
+					<h1>"Санкт-Петербург"</h1>
+
 				</div>
 			</div>
 		</div>
+		<div class="topDown">
+			<img src="img/logo.png" alt="logo">
+			<ul>
+				<li>
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				</li>
+				<li>
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				</li>
+				<li>
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				</li>
+			</ul>
+		</div>
+
 	</section>
 	<nav class="tfixed main-nav" id="menu">
 		<div class="container">
@@ -92,13 +87,40 @@
 						<a href="#contact">Контакты</a>
 					</li>
 				</ul>
-
+				<div class="m-menu">
+					<span></span><span></span><span></span><span></span>
+				</div>
 
 			</div>
 		</div>
 	</nav>
-
-	<div id="news" class="news">
+	<div class="m-menu-m">
+		<ul>
+			<li>
+				<a href="#aboutClub">О клубе</a>
+			</li>
+		
+			<li>
+				<a href="#speterburg">СХК "Санкт-Петербург"</a>
+			</li>
+			<li>
+				<a href="#media">Медиа</a>
+			</li>
+			<li>
+				<a href="#management">Руководство</a>
+			</li>
+			<li>
+				<a href="#avrora">ДСХК "Аврора"</a>
+			</li>
+			<li>
+				<a href="#contact">Контакты</a>
+			</li>
+			<li>
+				<a href="https://vk.com/sledge_hockey_spb">Новости</a>
+			</li>
+		</ul>
+	</div>
+	<div id="news" class="news  hidden-sm hidden-xs">
 		<div class="font-vert">
 			<ul>
 				<li>Новости клуба</li>
@@ -138,7 +160,7 @@
 				<div class="carousel-inner">
 					<div class="item active">
 						<div class="box-video">
-							<div class="bg-video" style="background-image: url(img/slider.jpg); background-position: 0 -140px;">
+							<div class="bg-video" style="background-image: url(img/slider.jpg);">
 								<div class="bt-play">Play</div>
 								<div class="vdeo-text">
 									<span>"78 канал" о команде СХК "Санкт-Петербург"</span>
@@ -151,7 +173,7 @@
 					</div>
 					<div class="item">
 						<div class="box-video">
-							<div class="bg-video" style="background-image: url(img/slider2.jpg); background-position: 0 -140px;">
+							<div class="bg-video" style="background-image: url(img/slider2.jpg);">
 								<div class="bt-play">Play</div>
 								<div class="vdeo-text">
 									<span>Петербугский дневник про СХК "Санкт-Петербург"</span>
@@ -164,10 +186,10 @@
 					</div>
 					<div class="item">
 						<div class="box-video">
-							<div class="bg-video"  style="background-image: url(img/slider3.jpg); background-position: 0 -140px;">
+							<div class="bg-video" style="background-image: url(img/slider3.jpg);">
 								<div class="bt-play">Play</div>
 								<div class="vdeo-text">
-									<span>Презентация  ДСХК "Аврора"</span>
+									<span>Презентация ДСХК "Аврора"</span>
 								</div>
 							</div>
 							<div class="video-container">
@@ -196,7 +218,7 @@
 				<div class="col-md-12">
 					<h2>Наш клуб</h2>
 				</div>
-				
+
 				<div class="col-md-4 col-xs-12">
 					<div class="item-circul">
 						<div class="circul"></div>
@@ -253,174 +275,178 @@
 				</div>
 			</div>
 		</div>
-			<div class="five-section">
-				<div class="container text-center">
-					<div class="row">
-						<h2>Состав команды</h2>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/balanda.jpg" title="Баланда Андрей Юрьевич" alt="Баланда Андрей Юрьевич">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">19</td>
-										<td class="item-play-text">
-											<h4>Баланда Андрей Юрьевич</h4>
-											<p>Нападающий</p>
-											<p>05.04.1979</p>
-										</td>
-									</tr>
-								</table>
-							</div>
+		<div class="five-section">
+			<div class="container text-center">
+				<div class="row">
+					<h2>Состав команды</h2>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/balanda.jpg" title="Баланда Андрей Юрьевич" alt="Баланда Андрей Юрьевич">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">19</td>
+									<td class="item-play-text">
+										<h4>Баланда Андрей Юрьевич</h4>
+										<p>Нападающий</p>
+										<p>05.04.1979</p>
+									</td>
+								</tr>
+							</table>
 						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/Кутовой Сергей Николаевич 26.07.1995 нападающий игровой номер 16.jpg" title="Кутовой Сергей Николаевич" alt="Кутовой Сергей Николаевич">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">16</td>
-										<td class="item-play-text">
-											<h4>Кутовой Сергей Николаевич</h4>
-											<p>Нападающий</p>
-											<p>26.07.1995</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/Молокоедов Андрей Алексеевич 31.03.85 нападающий игровой номер 8.jpg" title="Молокоедов Андрей Алексеевич" alt="Молокоедов Андрей Алексеевич">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">8</td>
-										<td class="item-play-text">
-											<h4>Молокоедов Андрей Алексеевич</h4>
-											<p>Нападающий</p>
-											<p>31.03.1985</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/spiridonov.jpg" title="Спиридонов Пётр Дмитриевич" alt="Спиридонов Пётр Дмитриевич">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">11</td>
-										<td class="item-play-text">
-											<h4>Спиридонов Пётр Дмитриевич</h4>
-											<p>Нападающий</p>
-											<p>27.03.1983</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/petrov.jpg" title="Петров Денис Дмитриевич" alt="Петров Денис Дмитриевич">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">28</td>
-										<td class="item-play-text">
-											<h4>Петров Денис Дмитриевич</h4>
-											<p>Нападающий</p>
-											<p>28.03.1983</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/Сорокин Никита 22.01.1987 нападающий игровой номер 13.jpg" title="Сорокин Никита" alt="Сорокин Никита">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">13</td>
-										<td class="item-play-text">
-											<h4>Сорокин Никита</h4>
-											<p>Нападающий</p>
-											<p>22.01.1987</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/Ибрагимов Ибрагим Исмаилович 01.04.1994 защитник игровой номер 15.jpg" title="Ибрагимов Ибрагим Исмаилович" alt="Ибрагимов Ибрагим Исмаилович">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">15</td>
-										<td class="item-play-text">
-											<h4>Ибрагимов Ибрагим Исмаилович</h4>
-											<p>Защитник</p>
-											<p>01.04.1994</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/Степнов Никита Дмитриевич 25.08.1994 защитник игровой номер 7.JPG" title="Степнов Никита Дмитриевич" alt="Степнов Никита Дмитриевич">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">7</td>
-										<td class="item-play-text">
-											<h4>Степнов Никита Дмитриевич</h4>
-											<p>Защитник</p>
-											<p>25.08.1994</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/Пигарев Кирилл Сергеевич 04.07.1982 вратарь игровой номер 29.JPG" title="Пигарев Кирилл Сергеевич" alt="Пигарев Кирилл Сергеевич">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">29</td>
-										<td class="item-play-text">
-											<h4>Пигарев Кирилл Сергеевич</h4>
-											<p>Вратарь</p>
-											<p>04.07.1982</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="item-player">
-								<img src="img/player/coach.jpg" alt="">
-								<table class="item-cont">
-									<tr>
-										<td class="item-play-numb">
-											<img src="img/logo.png" title="Талдыкин Геннадий Владиславович" alt="СХК "Санкт-Петербург " ">
-										</td>
-										<td class="item-play-text">
-											<h4>Талдыкин Геннадий Владиславович</h4>
-											<p>Тренер</p>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<button class="button">
-								<a href="https://vk.com/sledge_hockey_spb" target="_blank">вступить в команду</a>
-							</button>
-						</div>
-			
-	
-			
 					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/Кутовой Сергей Николаевич 26.07.1995 нападающий игровой номер 16.jpg" title="Кутовой Сергей Николаевич"
+							 alt="Кутовой Сергей Николаевич">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">16</td>
+									<td class="item-play-text">
+										<h4>Кутовой Сергей Николаевич</h4>
+										<p>Нападающий</p>
+										<p>26.07.1995</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/Молокоедов Андрей Алексеевич 31.03.85 нападающий игровой номер 8.jpg" title="Молокоедов Андрей Алексеевич"
+							 alt="Молокоедов Андрей Алексеевич">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">8</td>
+									<td class="item-play-text">
+										<h4>Молокоедов Андрей Алексеевич</h4>
+										<p>Нападающий</p>
+										<p>31.03.1985</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/spiridonov.jpg" title="Спиридонов Пётр Дмитриевич" alt="Спиридонов Пётр Дмитриевич">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">11</td>
+									<td class="item-play-text">
+										<h4>Спиридонов Пётр Дмитриевич</h4>
+										<p>Нападающий</p>
+										<p>27.03.1983</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/petrov.jpg" title="Петров Денис Дмитриевич" alt="Петров Денис Дмитриевич">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">28</td>
+									<td class="item-play-text">
+										<h4>Петров Денис Дмитриевич</h4>
+										<p>Нападающий</p>
+										<p>28.03.1983</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/Сорокин Никита 22.01.1987 нападающий игровой номер 13.jpg" title="Сорокин Никита" alt="Сорокин Никита">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">13</td>
+									<td class="item-play-text">
+										<h4>Сорокин Никита</h4>
+										<p>Нападающий</p>
+										<p>22.01.1987</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/Ибрагимов Ибрагим Исмаилович 01.04.1994 защитник игровой номер 15.jpg" title="Ибрагимов Ибрагим Исмаилович"
+							 alt="Ибрагимов Ибрагим Исмаилович">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">15</td>
+									<td class="item-play-text">
+										<h4>Ибрагимов Ибрагим Исмаилович</h4>
+										<p>Защитник</p>
+										<p>01.04.1994</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/Степнов Никита Дмитриевич 25.08.1994 защитник игровой номер 7.JPG" title="Степнов Никита Дмитриевич"
+							 alt="Степнов Никита Дмитриевич">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">7</td>
+									<td class="item-play-text">
+										<h4>Степнов Никита Дмитриевич</h4>
+										<p>Защитник</p>
+										<p>25.08.1994</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/Пигарев Кирилл Сергеевич 04.07.1982 вратарь игровой номер 29.JPG" title="Пигарев Кирилл Сергеевич" alt="Пигарев Кирилл Сергеевич">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb">29</td>
+									<td class="item-play-text">
+										<h4>Пигарев Кирилл Сергеевич</h4>
+										<p>Вратарь</p>
+										<p>04.07.1982</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="item-player">
+							<img src="img/player/coach.jpg" alt="">
+							<table class="item-cont">
+								<tr>
+									<td class="item-play-numb hidden-xs">
+										<img src="img/logo.png" title="Талдыкин Геннадий Владиславович" alt="СХК " Санкт-Петербург " ">
+									</td>
+									<td class="item-play-text">
+										<h4>Талдыкин Геннадий Владиславович</h4>
+										<p>Тренер</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<button class="button">
+							<a href="https://vk.com/sledge_hockey_spb" target="_blank">вступить в команду</a>
+						</button>
+					</div>
+
+
+
 				</div>
 			</div>
+		</div>
 	</section>
-	
+
 
 
 	<section class="six-section">
@@ -524,21 +550,21 @@
 			</a>
 
 			<!-- video -->
-			<iframe class="mix video" src="https://vk.com/video_ext.php?oid=-154198804&id=456239028&hash=9ec02996cfe9bcee"  frameborder="0"
-			 allowfullscreen></iframe>
-			
-			<iframe class="mix video" src="https://vk.com/video_ext.php?oid=-154198804&id=456239030&hash=91faae274c7567de"  frameborder="0"
-			allowfullscreen></iframe>
-
-			<iframe class="mix video" src="https://vk.com/video_ext.php?oid=-80887724&id=456239096&hash=0c81cf031188cc1d"  frameborder="0"
+			<iframe class="mix video" src="https://vk.com/video_ext.php?oid=-154198804&id=456239028&hash=9ec02996cfe9bcee" frameborder="0"
 			 allowfullscreen></iframe>
 
-			
-			
+			<iframe class="mix video" src="https://vk.com/video_ext.php?oid=-154198804&id=456239030&hash=91faae274c7567de" frameborder="0"
+			 allowfullscreen></iframe>
+
+			<iframe class="mix video" src="https://vk.com/video_ext.php?oid=-80887724&id=456239096&hash=0c81cf031188cc1d" frameborder="0"
+			 allowfullscreen></iframe>
+
+
+
 			<iframe class="mix video" src="https://www.youtube.com/embed/r3brwipuhnU" frameborder="0" allowfullscreen></iframe>
 			<iframe class="mix video" src="https://vk.com/video_ext.php?oid=-154198804&id=456239029&hash=74c533e3c59bfa25" frameborder="0"
 			 allowfullscreen></iframe>
-			 
+
 
 		</div>
 	</section>
@@ -551,7 +577,7 @@
 
 				<div class="item">
 
-					<div class="col-md-4 col-xs-12">
+					<div class="col-md-4 col-sm-4">
 						<div class="back-container">
 							<div class="back-item">
 								<div class="front">
@@ -587,7 +613,7 @@
 
 
 
-					<div class="col-md-4 col-xs-12">
+					<div class="col-md-4 col-sm-4">
 						<div class="back-container">
 							<div class="back-item">
 								<div class="front">
@@ -615,7 +641,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-xs-12">
+					<div class="col-md-4 col-sm-4">
 						<div class="back-container">
 							<div class="back-item">
 								<div class="front">
@@ -766,8 +792,7 @@
 					</div>
 					<div class="col-xs-6 col-md-3">
 						<div class="item-player">
-							<img src="img/player/avrora/team/MB.JPG" title="Москалёв Владисла Викторович"
-							 alt="Москалёв Владисла Викторович">
+							<img src="img/player/avrora/team/MB.JPG" title="Москалёв Владисла Викторович" alt="Москалёв Владисла Викторович">
 							<table class="item-cont">
 								<tr>
 									<td class="item-play-numb">
@@ -784,8 +809,7 @@
 					</div>
 					<div class="col-xs-6 col-md-3">
 						<div class="item-player">
-							<img src="img/player/avrora/team/MBA.JPG" title="Москалёва Вероника Викторовна"
-							 alt="Москалёва Вероника Викторовна">
+							<img src="img/player/avrora/team/MBA.JPG" title="Москалёва Вероника Викторовна" alt="Москалёва Вероника Викторовна">
 							<table class="item-cont">
 								<tr>
 									<td class="item-play-numb">
